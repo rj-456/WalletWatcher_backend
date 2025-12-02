@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import UserRegistration, Expense
 from .serializer import RegistrationSerializer, ExpenseSerializer
+from django.urls import reverse
 
 # --- API: GET ONLY (Rancis) ---
 
@@ -112,3 +113,4 @@ def users_html(request):
         return redirect('registration:login_html')
     users = UserRegistration.objects.all()
     return render(request, 'registration/users_list.html', {'users': users, 'current_user': request.session.get('user_name')})
+
