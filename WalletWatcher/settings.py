@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-!^(w14l05gwfbhunb!@dej1-zs!2y&+ud9=a#^*qxmg2pq*g(-
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'walletwatcher-backend-h1b7.onrender.com',
     '127.0.0.1', 
     'localhost'
 ]
@@ -133,4 +134,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
-CSRF_TRUSTED_ORIGINS = ["https://*.onrender.com"]
+CSRF_TRUSTED_ORIGINS = ["https://walletwatcher-backend-h1b7.onrender.com"]
